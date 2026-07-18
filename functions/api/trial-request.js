@@ -88,6 +88,73 @@ export async function onRequestPost(context) {
             )
             .run();
 
+            try {
+
+                await context.env.EMAIL.send({
+
+                    to: "campmikeydogdaycare@gmail.com",
+
+                    from: "bookings@campmikey.ie",
+
+                    subject: `New Trial Day Request - ${dogName}`,
+
+                    text: `
+            NEW CAMP MIKEY TRIAL DAY REQUEST
+
+            ABOUT THE DOG
+
+            Dog's Name: ${dogName}
+            Breed: ${breed}
+            Age: ${age}
+            Approximate Weight: ${weight}
+            Sex: ${sex}
+            Spayed / Neutered: ${neutered}
+            Vaccinations Up to Date: ${vaccinations}
+
+            PERSONALITY & SOCIAL EXPERIENCE
+
+            Temperament:
+            ${temperament}
+
+            Aggression: ${aggression}
+
+            Aggression Details:
+            ${aggressionDetails || "None provided"}
+
+            Resource Guarding: ${resourceGuarding}
+
+            Resource Guarding Details:
+            ${resourceDetails || "None provided"}
+
+            Off-Lead Social Experience:
+            ${socialExperience}
+
+            Additional Information:
+            ${additionalInformation || "None provided"}
+
+            OWNER DETAILS
+
+            Owner's Name: ${ownerName}
+            Phone Number: ${phone}
+            Home Address:
+            ${address}
+
+            Preferred Veterinary Practice: ${vet}
+
+            How They Heard About Camp Mikey: ${heardAboutUs}
+                `.trim()
+
+            });
+
+        } catch (emailError) {
+
+            console.error(
+                "Trial request saved, but email notification failed:",
+                emailError
+            );
+
+        }
+
         return Response.redirect(
             new URL("/thanks.html", context.request.url).toString(),
             303

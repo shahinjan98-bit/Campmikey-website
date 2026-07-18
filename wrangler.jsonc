@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "camp-mikey-enquiries",
+      "database_id": "c7b3f861-f48c-4879-bbe9-eaa689083ca9"
+    }
+  ],
+
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "remote": true
+    }
+  ]
+}
