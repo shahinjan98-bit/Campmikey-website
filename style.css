@@ -1038,3 +1038,52 @@ footer{
 }
 
 /* production refresh */
+
+/* ---------- Privacy Page ---------- */
+
+.privacy-page{
+    background:#f7f8fb;
+    color:var(--dark);
+}
+
+.privacy-section{
+    padding:60px 28px 100px;
+}
+
+.privacy-section h1{
+    font-size:2.7rem;
+    line-height:1.1;
+    margin:16px 0 10px;
+}
+
+.privacy-updated{
+    color:#777;
+    margin-bottom:40px;
+}
+
+.privacy-content{
+    background:white;
+    padding:32px 24px;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+}
+
+.privacy-content h2{
+    font-size:1.4rem;
+    margin:35px 0 12px;
+}
+
+.privacy-content h2:first-child{
+    margin-top:0;
+}
+
+.privacy-content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.privacy-return{
+    display:table;
+    margin:40px auto 0;
+}
