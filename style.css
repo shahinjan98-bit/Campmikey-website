@@ -1174,3 +1174,11 @@ footer{
 .footer-privacy:hover{
     color:#fff !important;
 }
+
+/* ---------- Turnstile ---------- */
+
+.turnstile-container{
+    display:flex;
+    justify-content:center;
+    margin:20px 0;
+}
