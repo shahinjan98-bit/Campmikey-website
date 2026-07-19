@@ -1166,11 +1166,11 @@ footer{
     display:inline-block;
     margin-top:12px;
 
-    color:rgba(255,255,255,.65);
+    color:rgba(255,255,255,.65) !important;
     font-size:.8rem;
     text-decoration:none;
 }
 
 .footer-privacy:hover{
-    color:#fff;
+    color:#fff !important;
 }
