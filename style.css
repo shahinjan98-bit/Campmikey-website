@@ -1046,31 +1046,41 @@ footer{
     color:var(--dark);
 }
 
+.privacy-page .booking-header{
+    padding-bottom:20px;
+}
+
 .privacy-section{
-    padding:60px 28px 100px;
+    padding:20px 28px 90px;
+}
+
+.privacy-section .booking-container{
+    max-width:850px;
+    margin:0 auto;
 }
 
 .privacy-section h1{
     font-size:2.7rem;
     line-height:1.1;
-    margin:16px 0 10px;
+    margin:14px 0 10px;
 }
 
 .privacy-updated{
     color:#777;
-    margin-bottom:40px;
+    margin:0 0 35px;
 }
 
 .privacy-content{
-    background:white;
-    padding:32px 24px;
+    background:#fff;
+    padding:45px 50px;
     border-radius:24px;
     box-shadow:0 15px 40px rgba(0,0,0,.06);
 }
 
 .privacy-content h2{
-    font-size:1.4rem;
-    margin:35px 0 12px;
+    font-size:1.45rem;
+    line-height:1.3;
+    margin:40px 0 14px;
 }
 
 .privacy-content h2:first-child{
@@ -1079,11 +1089,88 @@ footer{
 
 .privacy-content p{
     color:#555;
-    line-height:1.8;
-    margin-bottom:18px;
+    font-size:1rem;
+    line-height:1.75;
+    margin:0 0 18px;
+}
+
+.privacy-content p:last-child{
+    margin-bottom:0;
 }
 
 .privacy-return{
     display:table;
     margin:40px auto 0;
+}
+
+
+/* ---------- Privacy Page Mobile ---------- */
+
+@media (max-width:600px){
+
+    .privacy-page .booking-header{
+        padding-bottom:10px;
+    }
+
+    .privacy-section{
+        padding:10px 20px 70px;
+    }
+
+    .privacy-section h1{
+        font-size:2.2rem;
+    }
+
+    .privacy-content{
+        padding:30px 22px;
+        border-radius:20px;
+    }
+
+    .privacy-content h2{
+        font-size:1.25rem;
+        margin-top:32px;
+    }
+
+    .privacy-content p{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+}
+
+/* ---------- Form Privacy Link ---------- */
+
+.form-privacy{
+    max-width:600px;
+    margin:25px auto 18px;
+
+    text-align:center;
+    font-size:.8rem;
+    line-height:1.6;
+
+    color:#777;
+}
+
+.form-privacy a{
+    color:var(--blue);
+    font-weight:600;
+    text-decoration:none;
+}
+
+.form-privacy a:hover{
+    text-decoration:underline;
+}
+
+/* ---------- Footer Privacy Link ---------- */
+
+.footer-privacy{
+    display:inline-block;
+    margin-top:12px;
+
+    color:rgba(255,255,255,.65);
+    font-size:.8rem;
+    text-decoration:none;
+}
+
+.footer-privacy:hover{
+    color:#fff;
 }
