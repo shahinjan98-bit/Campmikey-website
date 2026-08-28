@@ -597,11 +597,155 @@ h1{
 
 }
 
+/* ---------- Overnight Stays ---------- */
+
+.overnight-notice{
+    max-width:500px;
+    margin:40px auto 60px;
+    padding:24px;
+    background:#fff;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    text-align:center;
+}
+
+.overnight-notice h3{
+    margin-bottom:10px;
+}
+
+.overnight-notice p{
+    margin:0;
+    color:#666;
+}
+
+.overnight-heading{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+
+.overnight-top{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+    margin:50px 0 70px;
+}
+
+.overnight-price{
+    background:#fff;
+    padding:32px;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    text-align:center;
+}
+
+.overnight-price-amount{
+    font-size:3rem;
+    font-weight:800;
+    color:var(--blue);
+    line-height:1;
+    margin:12px 0;
+}
+
+.overnight-discount{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 16px;
+    background:#eef7ff;
+    color:var(--black);
+    font-weight:700;
+    border-radius:999px;
+}
+
+.swipe-hint{
+    text-align:center;
+    color:#777;
+    font-size:0.9rem;
+    margin-bottom:20px;
+}
+
+.testimonial-slider{
+    display:flex;
+    align-items:flex-start;
+    gap:24px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    padding-bottom:10px;
+}
+
+.testimonial-card{
+    background:#fff;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+    min-width:80%;
+    flex:0 0 80%;
+    scroll-snap-align:start;
+}
+
+.testimonial-card img{
+    width:100%;
+    aspect-ratio:1 / 1;
+    object-fit:cover;
+    display:block;
+}
+
+.testimonial-content{
+    padding:28px;
+}
+
+.testimonial-content h4{
+    font-size:1.5rem;
+    margin-bottom:18px;
+}
+
+.testimonial-content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:16px;
+}
+
+.testimonial-content strong{
+    display:block;
+    margin-top:20px;
+    color:#666;
+}
+
+.testimonial-more{
+    margin-top:12px;
+}
+
+.testimonial-more summary{
+    cursor:pointer;
+    color:var(--blue);
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.testimonial-more[open] summary{
+    margin-bottom:20px;
+}
+
+.testimonial-slider::-webkit-scrollbar{
+    display:none;
+}
+
+.testimonial-slider{
+    display:flex;
+    gap:24px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    padding-bottom:10px;
+    padding-left:4px;
+    scrollbar-width:none;
+}
+
 /* ---------- CTA ---------- */
 
 .cta{
 
-    background:var(--light);
+    background:white;
 
     text-align:center;
 
