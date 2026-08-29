@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Camp Mikey | Camp Mikey</title>
+
+    <meta name="description"
+      content="Contact Camp Mikey with questions about dog daycare, overnight stays and our Dog Bus collection service in Bray.">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+</head>
+
+
+<body class="booking-page">
+
+
+<!-- ---------- Booking Header ---------- -->
+
+<header class="booking-header">
+
+    <a href="index.html" class="booking-logo">
+
+        <img src="images/logo.png"
+             alt="Camp Mikey">
+
+        <span>Camp Mikey</span>
+
+    </a>
+
+</header>
+
+
+<main>
+
+
+<!-- ---------- Booking Introduction ---------- -->
+
+<section class="booking-intro">
+
+    <div class="booking-container">
+
+        <h1>Contact Camp Mikey</h1>
+
+        <p>
+            Have a question about daycare, overnight stays or whether Camp Mikey is right for your dog? We'd be happy to help.
+        </p>
+
+        <div class="booking-notice">
+
+            <strong>Questions before booking?</strong>
+
+            Whether you'd like to know more about daycare, overnight stays,
+            collections or your dog's suitability, we'd be happy to help.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ---------- Booking Form ---------- -->
+
+<section class="booking-form-section">
+
+    <div class="booking-container">
+
+                <form
+                    class="booking-form"
+                    action="/api/contact"
+                    method="POST">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required>
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required></textarea>
+                    <div
+                        class="cf-turnstile"
+                        data-sitekey="0x4AAAAAAD5Fc-anNG180gr_">
+                    </div> 
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ---------- Footer ---------- -->
+
+<footer class="booking-footer">
+
+    <div class="booking-container">
+
+        <p>
+            Camp Mikey • Premium Dog Daycare • Bray, Wicklow
+        </p>
+
+        <a href="index.html">
+            Return to Camp Mikey
+        </a>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
