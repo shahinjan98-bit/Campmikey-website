@@ -68,6 +68,7 @@ export async function onRequestPost(context) {
         const vet = getRequired("vet");
 
         const ownerName = getRequired("owner-name");
+        const email = getRequired("email");
         const phone = getRequired("phone");
         const address = getRequired("address");
         const heardAboutUs = getRequired("heard-about-us");
@@ -91,11 +92,12 @@ export async function onRequestPost(context) {
                     additional_information,
                     vet,
                     owner_name,
+                    email,
                     phone,
                     address,
                     heard_about_us
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             `)
             .bind(
                 dogName,
@@ -114,6 +116,7 @@ export async function onRequestPost(context) {
                 additionalInformation,
                 vet,
                 ownerName,
+                email,
                 phone,
                 address,
                 heardAboutUs
@@ -148,6 +151,7 @@ export async function onRequestPost(context) {
                         additionalInformation,
                         vet,
                         ownerName,
+                        email,
                         phone,
                         address,
                         heardAboutUs
